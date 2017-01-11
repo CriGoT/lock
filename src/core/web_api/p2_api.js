@@ -17,6 +17,7 @@ class Auth0APIClient {
       domain: domain,
       audience: opts.audience,
       redirectUri: opts.redirectUrl,
+      popupRedirectUri: opts.popupRedirectUrl,
       responseMode: opts.responseMode,
       responseType: opts.responseType,
       leeway: opts.leeway || 1,

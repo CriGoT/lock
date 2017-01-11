@@ -19,7 +19,9 @@ class Auth0LegacyAPIClient {
     this.client = new auth0.WebAuth({
       clientID: clientID,
       domain: domain,
+      audience: opts.audience,
       redirectUri: opts.redirectUrl,
+      popupRedirectUri: opts.popupRedirectUrl,
       responseMode: opts.responseMode,
       responseType: opts.responseType,
       _sendTelemetry: opts._sendTelemetry === false ? false : true,
